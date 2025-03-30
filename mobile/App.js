@@ -27,7 +27,7 @@ export default function App() {
         <CustomButton title="Presionar" onPress={() => setMessage(inputText)} />
         <TextInput 
           style={styles.input} 
-          placeholder="Escribe aquí" 
+          placeholder="Escribe aquí por favor" 
           onChangeText={setInputText}
           value={inputText}
         />

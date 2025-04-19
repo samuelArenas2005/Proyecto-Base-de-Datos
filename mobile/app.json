@@ -13,6 +13,9 @@
     },
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.anonymous.myapp"
+    }
   }
 }

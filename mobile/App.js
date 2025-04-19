@@ -6,7 +6,7 @@ import CustomButton from './src/components/CustomButton';
 import styles from './src/styles/global';
 
 export default function App() {
-  const [message, setMessage] = useState('¡Bienvenido a mi App!');
+  const [message, setMessage] = useState('¡Bienvenido a mi App! hola daniel');
   const [inputText, setInputText] = useState('');
 
   let [fontsLoaded] = useFonts({
@@ -27,7 +27,7 @@ export default function App() {
         <CustomButton title="Presionar" onPress={() => setMessage(inputText)} />
         <TextInput 
           style={styles.input} 
-          placeholder="Escribe aquí" 
+          placeholder="Escribe aquí hola como estas" 
           onChangeText={setInputText}
           value={inputText}
         />

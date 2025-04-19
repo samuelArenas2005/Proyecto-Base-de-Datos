@@ -1,37 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+
+import React from 'react';
+import './App.css';
+import diseno1 from './dise-o-1.png';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="App">
+      <div className="container">
+        <nav className="navbar">
+          <div className="logo">
+            <span className="logo-black">U</span><span className="logo-purple">güee</span>
+          </div>
+          <ul className="nav-links">
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <div className="nav-auth">
+            <a href="#" className="login">Iniciar sesión</a>
+            <a href="#" className="signup">Regístrate</a>
+          </div>
+        </nav>
+
+        <header className="hero">
+          <h1>Conectando Estudiantes<br />Universitarios</h1>
+          <p>Ir a clase jamás había sido tan fácil</p>
+          <img src={diseno1} alt="Ilustración" className="hero-image" />
+        </header>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      
-    </>
-    
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
+
+
+
+
